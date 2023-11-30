@@ -1,0 +1,168 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{85AC520E-A279-4A0F-BE98-2E003181EBBC}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>kutuphane</RootNamespace>
+    <AssemblyName>kutuphane</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AnaMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AnaMenu.Designer.cs">
+      <DependentUpon>AnaMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Giris.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Giris.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Kitapislemleri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Kitapislemleri.Designer.cs">
+      <DependentUpon>Kitapislemleri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KitapTuruDuzenle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KitapTuruDuzenle.Designer.cs">
+      <DependentUpon>KitapTuruDuzenle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Kullanici.cs" />
+    <Compile Include="KullaniciAyarlari.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KullaniciAyarlari.Designer.cs">
+      <DependentUpon>KullaniciAyarlari.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OduncAlVer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OduncAlVer.Designer.cs">
+      <DependentUpon>OduncAlVer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AnaMenu.resx">
+      <DependentUpon>AnaMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Giris.resx">
+      <DependentUpon>Giris.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Kitapislemleri.resx">
+      <DependentUpon>Kitapislemleri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KitapTuruDuzenle.resx">
+      <DependentUpon>KitapTuruDuzenle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KullaniciAyarlari.resx">
+      <DependentUpon>KullaniciAyarlari.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OduncAlVer.resx">
+      <DependentUpon>OduncAlVer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Uyeislemleri.resx">
+      <DependentUpon>Uyeislemleri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="YayinEviDuzenle.resx">
+      <DependentUpon>YayinEviDuzenle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="YazarDuzenle.resx">
+      <DependentUpon>YazarDuzenle.cs</DependentUpon>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Uyeislemleri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Uyeislemleri.Designer.cs">
+      <DependentUpon>Uyeislemleri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="YayinEviDuzenle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="YayinEviDuzenle.Designer.cs">
+      <DependentUpon>YayinEviDuzenle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="YazarDuzenle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="YazarDuzenle.Designer.cs">
+      <DependentUpon>YazarDuzenle.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
